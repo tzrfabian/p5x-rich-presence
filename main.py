@@ -1,14 +1,14 @@
 from pypresence import Presence
 import time
 
-client_id = ""
+client_id = "" # your presence client_id
 RPC = Presence(client_id)
 
 RPC.connect()
 
 RPC.update(
-    state = "I'm Thou, Thou Art I",
-    large_image='p5x-icon',
+    state = "Currently in-game...",
+    large_image='icon',
     start= int(time.time()),
     buttons=[{"label": "Download Link!", "url":"https://p5x.perfectworld.com/kr/index.html"}]
 )
